@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/markenwerk/php-stack-util.svg?branch=master)](https://travis-ci.org/markenwerk/php-stack-util)
 [![Test Coverage](https://codeclimate.com/github/markenwerk/php-stack-util/badges/coverage.svg)](https://codeclimate.com/github/markenwerk/php-stack-util/coverage)
-<!--
-[![Dependency Status](https://www.versioneye.com/user/projects/57272fdaa0ca35005083f1e6/badge.svg)](https://www.versioneye.com/user/projects/57272fdaa0ca35005083f1e6)
--->
+[![Dependency Status](https://www.versioneye.com/user/projects/577d62ac91aab50027c6ca4d/badge.svg)](https://www.versioneye.com/user/projects/577d62ac91aab50027c6ca4d)
 [![Code Climate](https://codeclimate.com/github/markenwerk/php-stack-util/badges/gpa.svg)](https://codeclimate.com/github/markenwerk/php-stack-util)
 [![Latest Stable Version](https://poser.pugx.org/markenwerk/stack-util/v/stable)](https://packagist.org/packages/markenwerk/stack-util)
 [![Total Downloads](https://poser.pugx.org/markenwerk/stack-util/downloads)](https://packagist.org/packages/markenwerk/stack-util)
