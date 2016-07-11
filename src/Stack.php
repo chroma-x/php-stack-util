@@ -82,6 +82,19 @@ class Stack implements StackInterface
 	}
 
 	/**
+	 * @param int $index
+	 * @return $this
+	 */
+	public function delete($index)
+	{
+		if (isset($this->items[$index])) {
+			unset($this->items[$index]);
+			$this->items = array_values($this->items);
+		}
+		return $this;
+	}
+
+	/**
 	 * Return the current element
 	 *
 	 * @link http://php.net/manual/en/iterator.current.php

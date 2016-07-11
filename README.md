@@ -28,7 +28,159 @@ A PHP library providing common Stack implementation.
 require_once('path/to/vendor/autoload.php');
 ```
 
-***TODO: Add example code***
+### Handling a stack
+
+#### Pushing to the stack
+
+```{php}
+use Markenwerk\StackUtil\Stack;
+
+$stack = new Stack();
+
+$stack
+	->push('Item')
+	->push('Another item')
+	->push(12)
+	->push(null)
+	->push(8.12);
+
+$stackSize = $stack->size();
+echo 'Stack size: ' . $stackSize . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Stack size: 5
+```
+
+### Reading from the stack
+
+#### Getting the last item
+
+```{php}
+$lastItem = $stack->get();
+echo 'Last item: ' . $lastItem . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Last item: 8.12
+```
+
+#### Getting an item by index
+
+If the index is not available `null` is returned
+
+```{php}
+$secondItem = $stack->get(1);
+echo 'Second item: ' . $secondItem . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Second item: Another item
+```
+
+### Popping from the stack
+
+```{php}
+$poppedItem = $stack->pop();
+echo 'Popped item: ' . $poppedItem . PHP_EOL;
+
+$stackSize = $stack->size();
+echo 'Stack size: ' . $stackSize . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Popped item: 8.12
+Stack size: 4
+```
+
+### Updating stacked values
+
+#### Updating the last item
+
+```{php}
+$lastItem = $stack
+	->set('9.12')
+	->get();
+echo 'Updated last item: ' . $lastItem . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Updated last item: 9.12
+```
+
+#### Updating an item by index
+
+```{php}
+$thirdItem = $stack
+	->set('Third item', 2)
+	->get(2);
+echo 'Updated third item: ' . $thirdItem . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Updated third item: Third item
+```
+
+### Removing from the stack
+
+```{php}
+echo 'Stack size: ' . $stack->size() . PHP_EOL;
+$stack->delete(1);
+echo 'Stack size: ' . $stack->size() . PHP_EOL;
+```
+
+##### Output
+
+```{http}
+Stack size: 4
+Stack size: 3
+```
+
+### Iterating over the stack
+
+#### Using `foreach`
+
+```{php}
+foreach ($stack as $stackItemKey => $stackItemValue) {
+	echo 'Stack item ' . $stackItemKey . ': ' . $stackItemValue . PHP_EOL;
+}
+```
+
+##### Output
+
+```{http}
+Stack item 0: Item
+Stack item 1: Third item
+Stack item 2: 9.12
+```
+
+#### Using `for`
+
+```{php}
+for ($i = 0; $i < $stack->size(); $i++) {
+	echo 'Stack index ' . $i . ': ' . $stack->get($i) . PHP_EOL;
+}
+```
+
+##### Output
+
+```{http}
+Stack index 0: Item
+Stack index 1: Third item
+Stack index 2: 9.12
+```
 
 ---
 
