@@ -31,6 +31,12 @@ class StackTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals('Third item', $stack->get(2));
 		$stack->delete(1);
 		$this->assertEquals(3, $stack->size());
+		$stack->set('append', 10);
+		$this->assertEquals(4, $stack->size());
+		$stack->pop();
+		$this->assertEquals(3, $stack->size());
+		$notFound = $stack->get(100);
+		$this->assertNull($notFound);
 		$items = array();
 		foreach ($stack as $stackItemKey => $stackItemValue) {
 			$items[] = $stackItemValue;
