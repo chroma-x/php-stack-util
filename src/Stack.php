@@ -21,7 +21,7 @@ class Stack implements StackInterface
 	private $cursor = 0;
 
 	/**
-	 * @return mixed
+	 * @return int
 	 */
 	public function size()
 	{

@@ -11,7 +11,7 @@ interface StackInterface extends \Iterator
 {
 
 	/**
-	 * @return mixed
+	 * @return int
 	 */
 	public function size();
 
