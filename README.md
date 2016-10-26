@@ -170,7 +170,7 @@ Stack item 2: 9.12
 #### Using `for`
 
 ```{php}
-for ($i = 0; $i < $stack->size(); $i++) {
+for ($i = 0, $n = $stack->size(); $i < $n; $i++) {
 	echo 'Stack index ' . $i . ': ' . $stack->get($i) . PHP_EOL;
 }
 ```
