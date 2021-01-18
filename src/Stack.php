@@ -1,11 +1,11 @@
 <?php
 
-namespace Markenwerk\StackUtil;
+namespace ChromaX\StackUtil;
 
 /**
  * Class Stack
  *
- * @package Markenwerk\StackUtil
+ * @package ChromaX\StackUtil
  */
 class Stack implements StackInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Markenwerk\StackUtil;
+namespace ChromaX\StackUtil;
 
 /**
  * Class StackTest
  *
- * @package Markenwerk\StackUtil
+ * @package ChromaX\StackUtil
  */
 class StackTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,13 +1,15 @@
 <?php
 
-namespace Markenwerk\StackUtil;
+namespace ChromaX\StackUtil;
+
+use Iterator;
 
 /**
  * Interface StackInterface
  *
- * @package Markenwerk\StackUtil
+ * @package ChromaX\StackUtil
  */
-interface StackInterface extends \Iterator
+interface StackInterface extends Iterator
 {
 
 	/**

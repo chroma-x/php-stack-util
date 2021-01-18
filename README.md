@@ -1,13 +1,13 @@
 # PHP Stack Util
 
-[![Build Status](https://travis-ci.org/markenwerk/php-stack-util.svg?branch=master)](https://travis-ci.org/markenwerk/php-stack-util)
-[![Test Coverage](https://codeclimate.com/github/markenwerk/php-stack-util/badges/coverage.svg)](https://codeclimate.com/github/markenwerk/php-stack-util/coverage)
+[![Build Status](https://travis-ci.org/chroma-x/php-stack-util.svg?branch=master)](https://travis-ci.org/chroma-x/php-stack-util)
+[![Test Coverage](https://codeclimate.com/github/chroma-x/php-stack-util/badges/coverage.svg)](https://codeclimate.com/github/chroma-x/php-stack-util/coverage)
 [![Dependency Status](https://www.versioneye.com/user/projects/577d62ac91aab50027c6ca4d/badge.svg)](https://www.versioneye.com/user/projects/577d62ac91aab50027c6ca4d)
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/70322433-e801-41e3-bfd1-c6bd13484fdf.svg)](https://insight.sensiolabs.com/projects/70322433-e801-41e3-bfd1-c6bd13484fdf)
-[![Code Climate](https://codeclimate.com/github/markenwerk/php-stack-util/badges/gpa.svg)](https://codeclimate.com/github/markenwerk/php-stack-util)
-[![Latest Stable Version](https://poser.pugx.org/markenwerk/stack-util/v/stable)](https://packagist.org/packages/markenwerk/stack-util)
-[![Total Downloads](https://poser.pugx.org/markenwerk/stack-util/downloads)](https://packagist.org/packages/markenwerk/stack-util)
-[![License](https://poser.pugx.org/markenwerk/stack-util/license)](https://packagist.org/packages/markenwerk/stack-util)
+[![Code Climate](https://codeclimate.com/github/chroma-x/php-stack-util/badges/gpa.svg)](https://codeclimate.com/github/chroma-x/php-stack-util)
+[![Latest Stable Version](https://poser.pugx.org/chroma-x/stack-util/v/stable)](https://packagist.org/packages/chroma-x/stack-util)
+[![Total Downloads](https://poser.pugx.org/chroma-x/stack-util/downloads)](https://packagist.org/packages/chroma-x/stack-util)
+[![License](https://poser.pugx.org/chroma-x/stack-util/license)](https://packagist.org/packages/chroma-x/stack-util)
 
 A PHP library providing common Stack implementation.
 
@@ -16,7 +16,7 @@ A PHP library providing common Stack implementation.
 ```{json}
 {
    	"require": {
-        "markenwerk/stack-util": "~1.0"
+        "chroma-x/stack-util": "~1.0"
     }
 }
 ```
@@ -34,7 +34,7 @@ require_once('path/to/vendor/autoload.php');
 #### Pushing to the stack
 
 ```{php}
-use Markenwerk\StackUtil\Stack;
+use ChromaX\StackUtil\Stack;
 
 $stack = new Stack();
 
@@ -188,7 +188,7 @@ Stack index 2: 9.12
 ## Contribution
 
 Contributing to our projects is always very appreciated.  
-**But: please follow the contribution guidelines written down in the [CONTRIBUTING.md](https://github.com/markenwerk/php-stack-util/blob/master/CONTRIBUTING.md) document.**
+**But: please follow the contribution guidelines written down in the [CONTRIBUTING.md](https://github.com/chroma-x/php-stack-util/blob/master/CONTRIBUTING.md) document.**
 
 ## License
 
