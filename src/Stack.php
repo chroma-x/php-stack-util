@@ -100,6 +100,7 @@ class Stack implements StackInterface
 	 * @link http://php.net/manual/en/iterator.current.php
 	 * @return mixed
 	 */
+	#[\ReturnTypeWillChange]
 	public function current()
 	{
 		return $this->items[$this->cursor];
@@ -111,6 +112,7 @@ class Stack implements StackInterface
 	 * @link http://php.net/manual/en/iterator.next.php
 	 * @return void
 	 */
+	#[\ReturnTypeWillChange]
 	public function next()
 	{
 		++$this->cursor;
@@ -122,6 +124,7 @@ class Stack implements StackInterface
 	 * @link http://php.net/manual/en/iterator.key.php
 	 * @return mixed scalar on success, or null on failure.
 	 */
+	#[\ReturnTypeWillChange]
 	public function key()
 	{
 		return $this->cursor;
@@ -133,6 +136,7 @@ class Stack implements StackInterface
 	 * @link http://php.net/manual/en/iterator.valid.php
 	 * @return boolean
 	 */
+	#[\ReturnTypeWillChange]
 	public function valid()
 	{
 		return isset($this->items[$this->cursor]);
@@ -144,6 +148,7 @@ class Stack implements StackInterface
 	 * @link http://php.net/manual/en/iterator.rewind.php
 	 * @return void
 	 */
+	#[\ReturnTypeWillChange]
 	public function rewind()
 	{
 		$this->cursor = 0;
