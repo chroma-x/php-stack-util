@@ -1,29 +1,29 @@
 {
-  "name": "chroma-x/stack-util",
-  "type": "library",
-  "description": "A PHP library providing common stack implementation.",
-  "keywords": [
-    "stack"
-  ],
-  "homepage": "http://chroma-x.de/",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Martin Brecht-Precht",
-      "email": "mb@chroma-x.de",
-      "homepage": "http://chroma-x.de"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "ChromaX\\StackUtil\\": "src/"
-    }
-  },
-  "require": {
-    "php": ">=5.3"
-  },
-  "require-dev": {
-    "phpunit/phpunit": ">=4.8.26",
-    "codeclimate/php-test-reporter": "dev-master"
-  }
+	"name": "chroma-x/stack-util",
+	"type": "library",
+	"description": "A PHP library providing common stack implementation.",
+	"keywords": [
+		"stack"
+	],
+	"homepage": "https://chroma-x.de/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Martin Brecht-Precht",
+			"email": "mb@chroma-x.de",
+			"homepage": "https://chroma-x.de"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"ChromaX\\StackUtil\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=5.3"
+	},
+	"require-dev": {
+		"phpunit/phpunit": ">=4.8.26",
+		"codeclimate/php-test-reporter": "dev-master"
+	}
 }
